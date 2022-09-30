@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba6f2e7d526b93d46bf1fa0b192c184f, type: 3}
+  m_Name: Enemy.Asteroid
+  m_EditorClassIdentifier: 
+  gameObjectPrefab: {fileID: 6596375861046034589, guid: a61087911d28d12479133479fb722b18, type: 3}
+  startSpeed: 100
+  physicsData:
+    dragValue: 0
+    dragSpeedMultiplier: 0
+  loopOnOutOfBounds: 1
+  behaviors: []
+  onDeath:
+  - {fileID: 11400000, guid: 574961d0c6c503a49b4d44df2cca8490, type: 2}
+  scoreValue: 250
+  startRotationSpeed: 0
+  rotationSpeedDeviation: 20

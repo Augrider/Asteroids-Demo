@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4293118713898534170}
   - component: {fileID: 1340668186213216288}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,11 +92,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6596375861046034588}
-  - component: {fileID: 6596375861046034591}
+  - component: {fileID: -8822037048825922731}
   - component: {fileID: 2286111943997063287}
+  - component: {fileID: 601005657706227291}
   - component: {fileID: 1572079026725619233}
   - component: {fileID: 6808944953869133540}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Asteroid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +119,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6596375861046034591
+--- !u!114 &-8822037048825922731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,15 +128,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6596375861046034589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3079c94a88153c4d817934254e4bba4, type: 3}
+  m_Script: {fileID: 11500000, guid: cf32533542d2bc6429fadac55a55547f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationTransform: {fileID: 4293118713898534170}
-  _speedVector: {x: 0, y: 0}
-  appliedAcceleration: {x: 0, y: 0}
-  drag: 0.01
-  dragSpeedMultiplier: 0.1
-  rotationSpeed: 30
 --- !u!114 &2286111943997063287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,10 +143,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d1a98cb44553546963f6034b371bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  physics: {fileID: 6596375861046034591}
-  launcher: {fileID: 0}
-  _entityData: {fileID: 0}
-  spawnControlCooldown: 1
+  transformComponent: {fileID: -8822037048825922731}
+--- !u!114 &601005657706227291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596375861046034589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ec86f2627b8594490fedfdfe56eabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownEntity: {fileID: 2286111943997063287}
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!58 &1572079026725619233
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -167,7 +175,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 85
+  m_Radius: 95
 --- !u!50 &6808944953869133540
 Rigidbody2D:
   serializedVersion: 4

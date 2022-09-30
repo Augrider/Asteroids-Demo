@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: GameScenes
   m_EditorClassIdentifier: 
   sceneReferences:
-  - {fileID: 11400000, guid: 7cf1ddc79ae392b4abeaf72412592162, type: 2}
-  - {fileID: 11400000, guid: e02b876cbe9395147aa88a9f5a0b694d, type: 2}
+  - sceneAsset: {fileID: 102900000, guid: 776c6b8cf1fc6c94daf09d37e0c23e91, type: 3}
+    scenePath: Assets/Scenes/Game.Main.unity
+  - sceneAsset: {fileID: 102900000, guid: 44907f0c5c0b67f41b53581ff92ce3dc, type: 3}
+    scenePath: Assets/Scenes/Game.UI.unity

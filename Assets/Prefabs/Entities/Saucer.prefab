@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552656414716782453}
   - component: {fileID: 4360362870182646351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,11 +92,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8472137952509666035}
-  - component: {fileID: 8472137952509666032}
+  - component: {fileID: -5231472840005888060}
   - component: {fileID: 3576415292308644376}
+  - component: {fileID: 7686165285300689465}
   - component: {fileID: 4308038267468473422}
   - component: {fileID: 8099204054894445707}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Saucer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +119,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8472137952509666032
+--- !u!114 &-5231472840005888060
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,15 +128,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8472137952509666034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3079c94a88153c4d817934254e4bba4, type: 3}
+  m_Script: {fileID: 11500000, guid: cf32533542d2bc6429fadac55a55547f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationTransform: {fileID: 1552656414716782453}
-  _speedVector: {x: 0, y: 0}
-  appliedAcceleration: {x: 0, y: 0}
-  drag: 0.01
-  dragSpeedMultiplier: 0.1
-  rotationSpeed: 45
 --- !u!114 &3576415292308644376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,10 +143,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24d1a98cb44553546963f6034b371bf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  physics: {fileID: 8472137952509666032}
-  launcher: {fileID: 0}
-  _entityData: {fileID: 0}
-  spawnControlCooldown: 2
+  transformComponent: {fileID: -5231472840005888060}
+--- !u!114 &7686165285300689465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8472137952509666034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ec86f2627b8594490fedfdfe56eabd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownEntity: {fileID: 3576415292308644376}
+  collisionLayers:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!58 &4308038267468473422
 CircleCollider2D:
   m_ObjectHideFlags: 0

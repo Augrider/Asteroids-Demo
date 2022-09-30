@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ba99abc3a2c294bb6dc307bde17281, type: 3}
+  m_Name: PlayerSetup.Bomber
+  m_EditorClassIdentifier: 
+  _playerObject: {fileID: 11400000, guid: 1e118246166582b4aba69811be0b0bf4, type: 2}
+  _maxAcceleration: 400
+  _maxRotationSpeed: 120
+  _primary: {fileID: 11400000, guid: a134b2d0c931c0c4c9e6bbc5dbb3be20, type: 2}
+  _special: {fileID: 11400000, guid: f18bb565bacaf744faebfc3c3419206e, type: 2}

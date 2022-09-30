@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53d60a8d25f6d9c49ac29ac5c28bd2c6, type: 3}
+  m_Name: Weapon.Laser
+  m_EditorClassIdentifier: 
+  maxCharges: 3
+  oneChargeCooldown: 4.5
+  fireCooldown: 1
+  projectileProvider: {fileID: 11400000, guid: cfc1cc0920ba56b49b8114682cd0e331, type: 2}
+  launchers:
+  - launcherData: {fileID: 11400000, guid: 50bc0175339514f418b71f4f19282cdf, type: 2}
+    offsetPosition: {x: 0, y: 10, z: 0}
+    offsetDirection: {x: 0, y: 0}
