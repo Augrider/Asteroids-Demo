@@ -21,5 +21,5 @@ MonoBehaviour:
   behaviors: []
   onDeath: []
   pierce: 1
-  lifetime: 1
+  lifetime: 0.25
   maxDistance: 0

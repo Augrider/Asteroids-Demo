@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Launchers.Triple
   m_EditorClassIdentifier: 
   projectileAmount: 3
-  angleSpread: 10
+  angleSpread: 40

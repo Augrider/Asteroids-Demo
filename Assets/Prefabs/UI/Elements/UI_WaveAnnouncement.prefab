@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3433828093184029457
 RectTransform:
   m_ObjectHideFlags: 0
@@ -255,7 +255,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4080178279319659899}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99c03911e10953444a67b6064689bcbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 1706181224248339107}
+  announcementCanvas: {fileID: 8423465525699998536}
   waveCount: {fileID: 4080178278132602290}
   currentWave: {fileID: 0}
   showTime: 1.5

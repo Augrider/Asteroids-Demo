@@ -10,15 +10,19 @@ public class GameRules : MonoBehaviour
     [SerializeField] private GameSession gameSession;
 
     [SerializeField] private float waveDelay;
+    [SerializeField] private float gameStartDelay;
 
-    private IGameRule newWave;
-    private IGameRule gameOver;
+    private IGameRule newWaveRule;
+    private IGameRule gameOverRule;
+
+    public event Action gameStarted;
+    public event Action gameOver;
 
 
     void Awake()
     {
-        newWave = new NewWaveOnEntityRemoved(waveDelay);
-        gameOver = new GameOverOnPlayerRemoved();
+        newWaveRule = new NewWaveOnEntityRemoved(waveDelay);
+        gameOverRule = new GameOverOnPlayerRemoved();
 
         EventQueueLocator.service.SpaceObjectsRemoved += OnSpaceObjectsRemoved;
     }
@@ -31,14 +35,36 @@ public class GameRules : MonoBehaviour
 
     public void StartGame()
     {
-        gameSession.ResetScore();
-        newWave.Check(gameState, gameSession);
+        StartCoroutine(StartGameProcess(gameStartDelay));
     }
+
 
 
     private void OnSpaceObjectsRemoved()
     {
-        if (!gameOver.Check(gameState, gameSession))
-            newWave.Check(gameState, gameSession);
+        StartCoroutine(CheckOnDeathRules());
+    }
+
+    private IEnumerator CheckOnDeathRules()
+    {
+        yield return null;
+
+        if (gameOverRule.Check(gameState, gameSession))
+        {
+            gameOver?.Invoke();
+            yield break;
+        }
+
+        newWaveRule.Check(gameState, gameSession);
+    }
+
+
+    private IEnumerator StartGameProcess(float delay)
+    {
+        gameSession.ResetScore();
+        yield return new WaitForSeconds(delay);
+
+        newWaveRule.Check(gameState, gameSession);
+        gameStarted?.Invoke();
     }
 }

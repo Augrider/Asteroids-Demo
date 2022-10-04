@@ -9,7 +9,7 @@ namespace Developed.ScriptableObjects.Variables
     /// Base class for storing value in scriptable object
     /// </summary>
     /// <typeparam name="T">Type of value</typeparam>
-    public abstract class BaseVariableObject<T> : ScriptableObject, IVariableSync
+    public abstract class BaseVariableObject<T> : ScriptableObject, IVariableSync 
     {
 #if UNITY_EDITOR
         [Multiline]
@@ -32,6 +32,9 @@ namespace Developed.ScriptableObjects.Variables
 
         public void SetValue(T value)
         {
+            if(value.Equals(runtimeValue))
+                return;
+
             this._runtimeValue = value;
             InvokeOnValueChanged();
         }

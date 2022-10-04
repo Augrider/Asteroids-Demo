@@ -16,7 +16,7 @@ MonoBehaviour:
   startSpeed: 0
   physicsData:
     dragValue: 10
-    dragSpeedMultiplier: 0.3
+    dragSpeedMultiplier: 0.4
   loopOnOutOfBounds: 1
   behaviors: []
   onDeath: []

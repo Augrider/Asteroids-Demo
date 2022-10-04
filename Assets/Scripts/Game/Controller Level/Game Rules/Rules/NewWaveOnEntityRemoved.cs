@@ -20,7 +20,7 @@ public class NewWaveOnEntityRemoved : IGameRule
         if (newWaveInProgress)
             return false;
 
-        if (GetEnemiesAmount(EntityStorageLocator.service.GetSpaceEntities()) > 0)
+        if (gameState.enemiesAmount > 0)
             return false;
 
         CoroutinesLocator.service.StartCoroutine(NewWave(gameState, gameSession));
@@ -28,7 +28,7 @@ public class NewWaveOnEntityRemoved : IGameRule
     }
 
 
-
+    //TODO: Do it elsewhere, GameRules should only check and invoke events
     private IEnumerator NewWave(IGameState gameState, IGameSession gameSession)
     {
         newWaveInProgress = true;
@@ -41,11 +41,5 @@ public class NewWaveOnEntityRemoved : IGameRule
             EventQueueLocator.service.EnqueueSpaceObjectSpawn(spawnData);
 
         newWaveInProgress = false;
-    }
-
-
-    private int GetEnemiesAmount(ISpaceEntity[] entities)
-    {
-        return entities.Where(t => t.entityType == SpaceEntityType.Enemy).Count();
     }
 }

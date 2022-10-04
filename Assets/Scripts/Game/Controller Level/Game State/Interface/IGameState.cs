@@ -8,6 +8,7 @@ public interface IGameState
 
     IPhysics physics { get; }
     Bounds gameAreaBounds { get; }
+    int enemiesAmount { get; }
 
     //Store reference to player entity
     //Get entity data in adapter class?

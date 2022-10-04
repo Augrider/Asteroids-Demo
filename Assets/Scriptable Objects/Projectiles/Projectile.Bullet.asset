@@ -15,11 +15,11 @@ MonoBehaviour:
   gameObjectPrefab: {fileID: 2615972453119718154, guid: 631c6b8a73087fa4b8e262920cab8cf9, type: 3}
   startSpeed: 1000
   physicsData:
-    dragValue: 0
-    dragSpeedMultiplier: 1
+    dragValue: 10
+    dragSpeedMultiplier: 0.8
   loopOnOutOfBounds: 0
   behaviors: []
   onDeath: []
   pierce: 0
-  lifetime: 3
-  maxDistance: 1200
+  lifetime: 1.8
+  maxDistance: 1000

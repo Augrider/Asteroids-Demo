@@ -22,5 +22,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9ec04a623cec7664783ff4aa0bc6ff13, type: 2}
   onDeath: []
   pierce: 1
-  lifetime: 1
+  lifetime: 0.4
   maxDistance: 0

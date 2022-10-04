@@ -9,7 +9,7 @@ namespace UIElements
 {
     public class WaveAnnouncement : MonoBehaviour
     {
-        [SerializeField] private GameObject parent;
+        [SerializeField] private Canvas announcementCanvas;
 
         [SerializeField] private TextMeshProUGUI waveCount;
         [SerializeField] private IntVariable currentWave;
@@ -17,12 +17,12 @@ namespace UIElements
         [SerializeField] private float showTime = 1.5f;
 
 
-        void OnEnable()
+        void Awake()
         {
             currentWave.ValueChanged += UpdateWaveCount;
         }
 
-        void OnDisable()
+        void OnDestroy()
         {
             currentWave.ValueChanged -= UpdateWaveCount;
         }
@@ -44,11 +44,11 @@ namespace UIElements
 
         private IEnumerator WaitAndHide()
         {
-            parent.SetActive(true);
+            announcementCanvas.enabled = true;
 
             yield return new WaitForSeconds(showTime);
 
-            parent.SetActive(false);
+            announcementCanvas.enabled = false;
         }
     }
 }

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Weapon.Chaingun
   m_EditorClassIdentifier: 
   maxCharges: 1
-  oneChargeCooldown: 0.3
-  fireCooldown: 0.3
+  oneChargeCooldown: 0.2
+  fireCooldown: 0.2
   projectileProvider: {fileID: 11400000, guid: 2eb50187b66ad6540b1fb0bb22734050, type: 2}
   launchers:
   - launcherData: {fileID: 11400000, guid: 50bc0175339514f418b71f4f19282cdf, type: 2}

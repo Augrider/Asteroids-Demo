@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Weapon.BombLauncher
   m_EditorClassIdentifier: 
   maxCharges: 1
-  oneChargeCooldown: 0.5
+  oneChargeCooldown: 0.8
   fireCooldown: 0.5
-  projectileProvider: {fileID: 11400000, guid: 2eb50187b66ad6540b1fb0bb22734050, type: 2}
+  projectileProvider: {fileID: 11400000, guid: 38916b1657611d14094bbfa2420733d9, type: 2}
   launchers:
   - launcherData: {fileID: 11400000, guid: 50bc0175339514f418b71f4f19282cdf, type: 2}
     offsetPosition: {x: 0, y: 10, z: 0}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Player.Fighter
   m_EditorClassIdentifier: 
   gameObjectPrefab: {fileID: 2377814676083825750, guid: ee7faa32331404a43ab46fe62e203f77, type: 3}
-  startSpeed: 200
+  startSpeed: 0
   physicsData:
-    dragValue: 0
+    dragValue: 10
     dragSpeedMultiplier: 0.3
   loopOnOutOfBounds: 1
   behaviors: []

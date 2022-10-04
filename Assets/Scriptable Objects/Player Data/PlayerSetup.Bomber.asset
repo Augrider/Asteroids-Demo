@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerObject: {fileID: 11400000, guid: 1e118246166582b4aba69811be0b0bf4, type: 2}
   _maxAcceleration: 400
-  _maxRotationSpeed: 120
+  _maxRotationSpeed: 160
   _primary: {fileID: 11400000, guid: a134b2d0c931c0c4c9e6bbc5dbb3be20, type: 2}
   _special: {fileID: 11400000, guid: f18bb565bacaf744faebfc3c3419206e, type: 2}

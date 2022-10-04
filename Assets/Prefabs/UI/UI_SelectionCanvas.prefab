@@ -91,7 +91,7 @@ MonoBehaviour:
         m_MethodName: SetDifficulty
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: e4ab4ba39a3131d42b1116bcdf897814, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 34159cd55cd698b4b9cc40ab64472f10, type: 2}
           m_ObjectArgumentAssemblyTypeName: GameDifficulty, Game.GameData
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -843,8 +843,8 @@ MonoBehaviour:
         m_MethodName: SetPlayerShip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 989842b9d4d0cea459e3ec0e1d9bd982, type: 2}
-          m_ObjectArgumentAssemblyTypeName: PlayerData, Game.GameData
+          m_ObjectArgument: {fileID: 11400000, guid: bd506ddcbd28dad4db62a51bcdb47365, type: 2}
+          m_ObjectArgumentAssemblyTypeName: PlayerSetupData, Game.GameData
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1191,7 +1191,7 @@ MonoBehaviour:
         m_MethodName: SetDifficulty
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: e4ab4ba39a3131d42b1116bcdf897814, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 76fd2cef24ad49a45b7eb54cb004bbcf, type: 2}
           m_ObjectArgumentAssemblyTypeName: GameDifficulty, Game.GameData
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -1310,7 +1310,7 @@ MonoBehaviour:
         m_MethodName: SetDifficulty
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: e4ab4ba39a3131d42b1116bcdf897814, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: df0c4a1ad360318489bd5e0857b6a19c, type: 2}
           m_ObjectArgumentAssemblyTypeName: GameDifficulty, Game.GameData
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -2111,7 +2111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ce29df4cfd8e23439f83d999c9f3d85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameContext: {fileID: 11400000, guid: 78c3b8c525807ea4697d4d99b72f70cd, type: 2}
+  gameSetup: {fileID: 11400000, guid: e642c835ec350d84895bc6fa7ec748ad, type: 2}
 --- !u!114 &8882962107007635376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,7 +2124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd0d56c5522ee954ba7f9534daed63f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameContext: {fileID: 11400000, guid: 78c3b8c525807ea4697d4d99b72f70cd, type: 2}
+  gameSetup: {fileID: 11400000, guid: e642c835ec350d84895bc6fa7ec748ad, type: 2}
 --- !u!114 &2729411981348776298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3618,8 +3618,8 @@ MonoBehaviour:
         m_MethodName: SetPlayerShip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 989842b9d4d0cea459e3ec0e1d9bd982, type: 2}
-          m_ObjectArgumentAssemblyTypeName: PlayerData, Game.GameData
+          m_ObjectArgument: {fileID: 11400000, guid: c1c82b17dfda9694e89ab57628177219, type: 2}
+          m_ObjectArgumentAssemblyTypeName: PlayerSetupData, Game.GameData
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

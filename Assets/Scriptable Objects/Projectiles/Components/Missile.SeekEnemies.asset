@@ -12,9 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8403a78c55d145c45b9add1cf1ab08df, type: 3}
   m_Name: Missile.SeekEnemies
   m_EditorClassIdentifier: 
-  chargeAcceleration: 300
-  stopAccelerationMultiplier: 0
+  cruiseSpeed: 600
   rotationSpeed: 200
-  chargeRotationSpeed: 200
   angleMargin: 0.5
-  chargeAngleMargin: 360

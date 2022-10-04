@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: Projectile.Missile
   m_EditorClassIdentifier: 
   gameObjectPrefab: {fileID: 2615972453119718154, guid: 631c6b8a73087fa4b8e262920cab8cf9, type: 3}
-  startSpeed: 200
+  startSpeed: 300
   physicsData:
     dragValue: 0
     dragSpeedMultiplier: 0
   loopOnOutOfBounds: 0
   behaviors:
   - {fileID: 11400000, guid: edb1a9856017bb443a88cbab28120a6c, type: 2}
-  onDeath:
-  - {fileID: 11400000, guid: 81079612f649d0c4badc74c0cbc0d0ce, type: 2}
-  pierce: 0
+  onDeath: []
+  pierce: 1
   lifetime: 3
   maxDistance: 0
